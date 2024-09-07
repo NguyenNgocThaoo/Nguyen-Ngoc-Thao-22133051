@@ -1,0 +1,7 @@
+INDEX VERSION 1.134
+C:\Users\Windows\Documents\workspace-spring-tool-suite-4-4.20.0.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2212549366.index
+\LapTrinhWeb\src\main\java
+C:\Users\Windows\Documents\workspace-spring-tool-suite-4-4.20.0.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4269273106.index
+\LapTrinhWeb\src\main\java
+C:\Users\Windows\Documents\workspace-spring-tool-suite-4-4.20.0.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2575978575.index
+\LapTrinhWeb\src\main\java

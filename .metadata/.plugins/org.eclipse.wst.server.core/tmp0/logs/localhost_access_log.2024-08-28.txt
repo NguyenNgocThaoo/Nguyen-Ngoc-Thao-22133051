@@ -1,0 +1,12 @@
+127.0.0.1 - - [28/Aug/2024:08:18:13 +0700] "GET / HTTP/1.1" 404 752
+127.0.0.1 - - [28/Aug/2024:08:34:40 +0700] "GET / HTTP/1.1" 404 752
+127.0.0.1 - - [28/Aug/2024:09:22:22 +0700] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [28/Aug/2024:09:22:36 +0700] "GET /HelloWorld/HelloWorld HTTP/1.1" 200 22
+0:0:0:0:0:0:0:1 - - [28/Aug/2024:09:22:37 +0700] "GET /favicon.ico HTTP/1.1" 404 763
+127.0.0.1 - - [28/Aug/2024:09:28:34 +0700] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [28/Aug/2024:09:28:35 +0700] "GET /HelloWorld/servlet/webPage1.controllers.HomeController HTTP/1.1" 404 814
+0:0:0:0:0:0:0:1 - - [28/Aug/2024:09:28:51 +0700] "GET /HelloWorld/servlet/home HTTP/1.1" 404 783
+0:0:0:0:0:0:0:1 - - [28/Aug/2024:09:29:51 +0700] "GET /HelloWorld/home HTTP/1.1" 200 21
+0:0:0:0:0:0:0:1 - - [28/Aug/2024:09:30:46 +0700] "GET /HelloWorld/trangchu HTTP/1.1" 200 21
+0:0:0:0:0:0:0:1 - - [28/Aug/2024:09:30:50 +0700] "GET /HelloWorld/trangchu1 HTTP/1.1" 404 776
+0:0:0:0:0:0:0:1 - - [28/Aug/2024:09:30:53 +0700] "GET /HelloWorld/trangchu HTTP/1.1" 200 21

@@ -1,0 +1,63 @@
+package tuan3.services;
+
+import tuan3.models.UserModel;
+import tuan3.dao.*;
+
+public class UserServiceImp implements UserService{
+	IUserDao userDao = new  UserDaoImpl();
+	@Override
+	public UserModel login(String username, String password) {
+		 UserModel user = this.findByUserName(username.trim());
+		 
+		 if (user != null && password.equals(user.getPassword())) {
+		 return user;
+		 }
+		return user;
+	}
+
+	@Override
+	public UserModel get(String username) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	 public UserModel findByUserName(String username) {
+		 return userDao.findByUserName(username);
+		 }
+
+	@Override
+	public void insert(UserModel user) {
+		 userDao.insert(user);
+		
+	}
+
+	@Override
+	public boolean register(String email, String password, String username, String fullname, String phone) {
+		 if (userDao.checkExistUsername(username)) {
+			 return false;
+			 }
+			 long millis=System.currentTimeMillis();   
+			java.sql.Date date=new java.sql.Date(millis);
+			 userDao.insert(new UserModel(email, username, fullname,password, 
+			null,5,phone,date));
+			 return true;
+		return false;
+	}
+
+	@Override
+	public boolean checkExistEmail(String email) {
+		 return userDao.checkExistEmail(email);
+	}
+
+	@Override
+	public boolean checkExistUsername(String username) {
+		 return userDao.checkExistUsername(username);
+	}
+
+	@Override
+	public boolean checkExistPhone(String phone) {
+		 return userDao.checkExistPhone(phone);
+	}
+	 
+	
+}

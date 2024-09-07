@@ -1,0 +1,12 @@
+package tuan3.dao;
+
+import java.util.List;
+
+import tuan3.models.*;
+
+public interface IUserDao {
+	List<UserModel> findAll();
+	UserModel findOne(int id);
+	void insert(UserModel user);
+	UserModel  findByUserName(String username);
+}

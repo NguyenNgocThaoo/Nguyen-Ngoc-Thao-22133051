@@ -1,0 +1,56 @@
+package tuan3.dao;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.List;
+
+import tuan3.config.DBConnection;
+import tuan3.models.UserModel;
+
+public class UserDaoImpl  implements IUserDao{
+	 public Connection conn = null;
+	 public PreparedStatement ps = null;
+	 public ResultSet rs = null;
+	@Override
+	public UserModel findOne(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void insert(UserModel user) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<UserModel> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public UserModel  findByUserName(String username) {
+		 String sql = "SELECT * FROM [USER] WHERE username = ? ";
+		 try {
+			 conn = new DBConnection().getConnection();
+			 ps = conn.prepareStatement(sql);
+			 ps.setString(1, username);
+			 rs = ps.executeQuery();
+			 System.out.print("111111111111111111111");
+			 while (rs.next()) {
+				 System.out.print("Result Set");
+				 UserModel user = new UserModel();
+				 user.setId(rs.getInt("Id"));
+				 user.setUsername(rs.getString("username"));
+				 user.setFullname(rs.getString("fullname"));
+				 user.setPassword(rs.getString("password"));
+				 user.setImage(rs.getString("image"));
+				 return user;
+		 }
+		 } catch (Exception e) {e.printStackTrace();}
+		 return null;
+	}
+	
+
+}
