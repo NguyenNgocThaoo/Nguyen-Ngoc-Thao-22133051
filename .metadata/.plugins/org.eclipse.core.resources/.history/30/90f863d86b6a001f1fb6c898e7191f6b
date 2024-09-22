@@ -1,8 +1,0 @@
-package tuan3.dao;
-
-public interface IUserDao {
-	list<UserModel> findAll();
-	UserModel findOne(int id);
-	void insert(UserModel user);
-	
-}

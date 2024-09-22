@@ -1,10 +1,8 @@
-INDEX VERSION 1.4+C:\Users\Windows\Documents\workspace-spring-tool-suite-4-4.20.0.RELEASE\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+INDEX VERSION 1.4+C:\Users\Windows\Documents\HocTap\Nam 3\Lap trinh web\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1779280294.index
+1333469251.index
+1163488593.index
+120659047.index
+1277146372.index
+4238315559.index
 3745850782.index
-3453033415.index
-3899833554.index
-2380175872.index
-824099920.index
-1125471688.index
-4269273106.index
-4269273106.index
-3946948219.index
